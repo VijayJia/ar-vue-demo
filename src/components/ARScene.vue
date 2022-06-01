@@ -10,7 +10,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 export default {
   name: "ARScene",
   mounted() {
-    THREEx.ArToolkitContext.baseURL = './'
+    THREEx.ArToolkitContext.baseURL = 'https://vijayjia.github.io/ar-vue-demo/'
     console.log("ARScene mounted");
     
     // init renderer
