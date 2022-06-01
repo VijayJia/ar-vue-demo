@@ -5,6 +5,7 @@
 <script>
 import * as THREEx from '@ar-js-org/ar.js/three.js/build/ar-threex'
 import * as THREE from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 export default {
   name: "ARScene",
@@ -121,7 +122,7 @@ export default {
         //		add an object in the scene
         //////////////////////////////////////////////////////////////////////////////////
 
-        var threeGLTFLoader = new THREE.GLTFLoader();
+        var threeGLTFLoader = new GLTFLoader();
         var model;
 
         threeGLTFLoader.load("resources/Flamingo.glb", function (gltf) {
